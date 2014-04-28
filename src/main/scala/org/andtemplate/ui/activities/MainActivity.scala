@@ -1,16 +1,12 @@
 package org.andtemplate.ui.activities
 
-import android.app.Activity
-import android.os.Bundle
+import com.mle.android.ui.activities.LayoutActivity
 import org.andtemplate.R
 
 /**
  *
  * @author mle
  */
-class MainActivity extends Activity {
-  override def onCreate(savedInstanceState: Bundle): Unit = {
-    super.onCreate(savedInstanceState)
-    setContentView(R.layout.main)
-  }
+class MainActivity extends LayoutActivity {
+  override def contentView: Int = R.layout.main
 }
