@@ -13,8 +13,7 @@ object AndroidBuild extends Build {
     fork in Test := true,
     libraryDependencies ++= Seq(
       "org.scalatest" %% "scalatest" % "2.1.3" % "test",
-      "com.github.malliina" %% "util-android" % "0.1.2"
-    )
+      "com.github.malliina" %% "util-android" % "0.1.2")
   )
 
   def androidSettings = Seq(
